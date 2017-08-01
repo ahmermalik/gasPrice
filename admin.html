@@ -7,19 +7,38 @@
 <body>
 
 <h1> <center>  Gas Saving Calculator </center> </h1>
-<form id="form1"> Credit card Price:</form>
-<form id="form2"> Cashback Percentage:</form>
-<form id="form3"> Cash Price:</form>
-<form id="form4"> How Many Gallons:</form>
+<div>
+<form id="form1">
+    Credit card Price: <input name="creditPrice" type="number">
+</form>
 
+<form id="form2">
+    Cashback Percentage: <input name="cashBack" type="number">
+</form>
+
+<form id="form3">
+    Cash Price: <input name="cashPrice" type="number">
+</form>
+
+<form id="form4">
+    How Many Gallons:<input name="gallons" type="number">
+</form>
+
+<button onclick="analyze()">Submit</button>
+
+</div>
 
 <script>
-    var creditPrice = 1.98;
-    var cashBack = .97;
-    var gallons = 17;
-    var cashPrice = 1.94;
+    function analyze() {
+    var creditPrice, cp, cashBack, cashPrice, gallons;
+    creditPrice = document.getElementById("form1");
+    cashBack = document.getElementById("form2");
+    cashPrice= document.getElementById("form3");
+    gallons = document.getElementById("form4");
+    cp=creditPrice.elements["creditPrice"].value;
+    document.write("Hello Ahmer your credit price is: "+cp+"<br>");
+    }
 
-"""'"
 
 </script>
 

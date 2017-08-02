@@ -8,35 +8,35 @@
 
 <h1> <center>  Gas Saving Calculator </center> </h1>
 <div>
-<form id="form1">
-    Credit card Price: <input name="creditPrice" type="number">
-</form>
+    <form id="form1">
+        Credit card Price: <input name="creditPrice" type="number">
+    </form>
 
-<form id="form2">
-    Cashback Percentage: <input name="cashBack" type="number">
-</form>
+    <form id="form2">
+        Cashback Percentage: <input name="cashBack" type="number">
+    </form>
 
-<form id="form3">
-    Cash Price: <input name="cashPrice" type="number">
-</form>
+    <form id="form3">
+        Cash Price: <input name="cashPrice" type="number">
+    </form>
 
-<form id="form4">
-    How Many Gallons:<input name="gallons" type="number">
-</form>
+    <form id="form4">
+        How Many Gallons:<input name="gallons" type="number">
+    </form>
 
-<button onclick="analyze()">Submit</button>
+    <button onclick="analyze()">Submit</button>
 
 </div>
 
 <script>
     function analyze() {
-    var creditPrice, cp, cashBack, cashPrice, gallons;
-    creditPrice = document.getElementById("form1");
-    cashBack = document.getElementById("form2");
-    cashPrice= document.getElementById("form3");
-    gallons = document.getElementById("form4");
-    cp=creditPrice.elements["creditPrice"].value;
-    document.write("Hello Ahmer your credit price is: "+cp+"<br>");
+        var creditPrice, cp, cashBack, cashPrice, gallons;
+        creditPrice = document.getElementById("form1");
+        cashBack = document.getElementById("form2");
+        cashPrice= document.getElementById("form3");
+        gallons = document.getElementById("form4");
+        cp=creditPrice.elements["creditPrice"].value;
+        document.write("Hello Ahmer your credit price is: "+cp+"<br>");
     }
 
 

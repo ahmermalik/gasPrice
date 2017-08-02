@@ -29,3 +29,11 @@ else {
 
      console.log(result);
 
+<!--
+   document.write("Hello Ahmer your credit price for " +ga+ " gallons of fuel is" +(crp(cab+.01))+"<br>");
+   -->
+<!--
+document.write("For " +ga+ " gallons of fuel, you will pay:"+"<br>");
+document.write("Cash Price: " +(ga*cap)+"<br>");
+document.write("Credit Price with discount: " +(crp-(crp*(cab*.01)))+"<br>");
+-->

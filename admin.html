@@ -30,15 +30,26 @@
 
 <script>
     function analyze() {
-        var creditPrice, cp, cashBack, cashPrice, gallons;
+        var creditPrice, crp, cashBack, cab, cashPrice,cap, gallons, ga;
         creditPrice = document.getElementById("form1");
         cashBack = document.getElementById("form2");
         cashPrice= document.getElementById("form3");
         gallons = document.getElementById("form4");
-        cp=creditPrice.elements["creditPrice"].value;
-        document.write("Hello Ahmer your credit price is: "+cp+"<br>");
-    }
+        crp=creditPrice.elements["creditPrice"].value;
+        cab=cashBack.elements["cashBack"].value;
+        cap=cashPrice.elements["cashPrice"].value;
+        ga=gallons.elements["gallons"].value;
 
+        var formulas;
+
+        creditPrice = (crp*8);
+
+
+
+        document.write(creditPrice);
+
+
+    }
 
 </script>
 

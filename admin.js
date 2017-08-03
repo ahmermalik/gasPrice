@@ -3,6 +3,9 @@
  */
 
 
+
+
+
 var creditPrice = 1.98;
 var cashBack = .97;
 var gallons = 17;
@@ -20,14 +23,14 @@ console.log(cashOnly);
 console.log(creditOnly)
 
 if (creditOnly > cashOnly) {
-        result = "More savings if you pay using cash";
-    }
+    result = "More savings if you pay using cash";
+}
 
 else {
     result = "More savings if you pay using credit";
 }
 
-     console.log(result);
+console.log(result);
 
 <!--
    document.write("Hello Ahmer your credit price for " +ga+ " gallons of fuel is" +(crp(cab+.01))+"<br>");

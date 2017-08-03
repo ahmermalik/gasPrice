@@ -8,8 +8,10 @@
 
 <h1> <center>  Gas Saving Calculator </center> </h1>
 <div>
+
+
     <form id="form1">
-        Credit card Price: <input name="creditPrice" type="number">
+        Credit card Price: <input name="creditPrice" type="number" oninput="setTwoNumberDecimal" min="0" max="10">
     </form>
 
     <form id="form2">
@@ -28,9 +30,10 @@
 
 </div>
 
+
 <script>
     function analyze() {
-        var creditPrice, crp, cashBack, cab, cashPrice,cap, gallons, ga;
+        var creditPrice, crp, cashBack, cab, cashPrice, cap, gallons, ga;
         creditPrice = document.getElementById("form1");
         cashBack = document.getElementById("form2");
         cashPrice= document.getElementById("form3");
@@ -40,17 +43,24 @@
         cap=cashPrice.elements["cashPrice"].value;
         ga=gallons.elements["gallons"].value;
 
-        var formulas;
-
-        creditPrice = (crp*8);
 
 
+        var newPrice;
 
-        document.write(creditPrice);
+
+        cashBack= ((crp)-.01*crp);
 
 
+        document.write("Your per gallon cost with discount will be: " + (cashBack)+"<br>");
+
+        newPrice = cashBack * ga ;
+
+        document.write("To fuel your vehicle using a credit card, it will cost: " + (newPrice)+"<br>");
+
+        cashPrice = ga * cap;
+
+        document.write("To fuel your vehicle using cash, it will cost: " + (cashPrice)+"<br>");
     }
-
 </script>
 
 

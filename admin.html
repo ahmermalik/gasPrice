@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Gas Saver</title>
+    <link rel="stylesheet" type="text/css" href="./admin.css">
 </head>
 <body>
 
 <h1> <center>  Gas Saving Calculator </center> </h1>
+<div>
 
 
+    <form id="form1">
+        Credit card Price: <input name="creditPrice" type="number" oninput="setTwoNumberDecimal" min="0" max="10">
+    </form>
 
+    <form id="form2">
+        Cashback Percentage: <input name="cashBack" type="number">
+    </form>
 
+    <form id="form3">
+        Cash Price: <input name="cashPrice" type="number">
+    </form>
+
+    <form id="form4">
+        How Many Gallons:<input name="gallons" type="number">
+    </form>
+
+    <button onclick="analyze()">Submit</button>
+
+    <div id="result-div">
+
+    </div>
+
+</div>
 
 <script src="./admin.js"></script>
 

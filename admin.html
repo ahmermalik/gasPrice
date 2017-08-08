@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Gas Saver</title>
     <link rel="stylesheet" type="text/css" href="./admin.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<h1> <center>  Gas Saving Calculator </center> </h1>
+<h1>   Gas Saving Calculator  </h1>
 <div>
 
 
     <form id="form1">
-        Credit card Price: <input name="creditPrice" type="number" oninput="setTwoNumberDecimal" min="0" max="10">
+        Credit Card Price: <input name="creditPrice" type="number" oninput="setTwoNumberDecimal" min="0" max="10">
     </form>
 
     <form id="form2">
@@ -24,13 +25,12 @@
     </form>
 
     <form id="form4">
-        How Many Gallons:<input name="gallons" type="number">
+        Number of Gallons:<input name="gallons" type="number">
     </form>
-
-    <button onclick="analyze()">Submit</button>
-
-    <div id="result-div">
-
+<div> <center>
+    <button onclick="analyze()">Submit</button> </center>
+</div>
+    <div id="result-div" class="center">
     </div>
 
 </div>

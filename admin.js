@@ -15,9 +15,9 @@ function analyze() {
     var newPrice;
 
     //calculations
-    cashBack= ((crp)-.01*crp);
-    newPrice = cashBack * ga ;
-    cashPrice = ga * cap;
+    cashBack= parseFloat(((crp)-.01*crp));
+    newPrice = parseFloat(cashBack * ga) ;
+    cashPrice = parseFloat(ga * cap);
 
     //display
     resultsDiv.innerHTML = "Your per gallon cost with cashback will be: $" + (cashBack)+"<br>";

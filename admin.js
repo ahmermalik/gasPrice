@@ -20,9 +20,9 @@ function analyze() {
     cashPrice = parseFloat(ga * cap);
 
     //display
-    resultsDiv.innerHTML = "Your per gallon cost with cashback will be: $" + (cashBack)+"<br>";
-    resultsDiv.innerHTML += "To fuel your vehicle using a credit card, it will cost: $" + (newPrice)+"<br>";
-    resultsDiv.innerHTML += "To fuel your vehicle using cash, it will cost: $" + (cashPrice)+"<br>";
+    resultsDiv.innerHTML = "Your per gallon cost with cashback will be: $" + parseFloat((cashBack))+"<br>";
+    resultsDiv.innerHTML += "To fuel your vehicle using a credit card, it will cost: $" + parseFloat((newPrice))+"<br>";
+    resultsDiv.innerHTML += "To fuel your vehicle using cash, it will cost: $" + parseFloat((cashPrice))+"<br>";
 
 
     if (newPrice > cashPrice) {

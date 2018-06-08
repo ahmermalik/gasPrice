@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gas Saver</title>
+    <title>Actual Cost Savings</title>
     <link rel="stylesheet" type="text/css" href="./admin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <!--<link href="jQueryplugins.css" rel="stylesheet">-->
 </head>
 <body>
 <header>
-<h1>   Gas Saving Calculator  </h1> </header>
+<h1>   Gas Cost Savings Calculator  </h1> </header>
 <div>
 
 
@@ -28,14 +29,25 @@
     <form id="form4">
         Number of Gallons:<input name="gallons" type="number">
     </form>
-<div> <center>
-    <button onclick="analyze()">Submit</button> </center>
+
+<div>
+    <center>
+    <button onclick="analyze()">Submit</button>
+    </center>
 </div>
     <div id="result-div" class="center">
     </div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./admin.js"></script>
+<script> $('button').reverse(){
+    this.click(analyze() {
+        alert('Hello World');
 
+    });
+}
+
+); </script>
 </body>
 </html>
